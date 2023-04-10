@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand">
+          <button type="button" class="btn">
+            <i class="fab fa-instagram fa-lg"></i> Instagram
+          </button>
+        </a>
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item nav-link">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-whatever=""
+            >
+              Create new post
+            </button>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1
+                      class="modal-title fs-5 link-dark"
+                      id="exampleModalLabel"
+                    >
+                      Create new post
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label
+                          for="message-text"
+                          class="col-form-label link-dark"
+                          >Caption:</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="message-text"
+                          type="text"
+                          placeholder="Add the caption of your post here"
+                        ></textarea>
+                      </div>
+                    </form>
+
+                    <button type="button" class="btn btn-light">
+                      <i class="fas fa-camera" style="color: #06070a"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-light">
+                      <i
+                        class="fas fa-map-marker-alt"
+                        style="color: #080c11"
+                      ></i>
+                    </button>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-success">
+                      Publish
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item nav-link">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fas fa-cog"></i>
+              </button>
+
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item link-danger" href="#">Log out</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <nav>
+        <div
+          class="nav nav-tabs justify-content-center"
+          id="nav-tab"
+          role="tablist"
+        >
+          <button
+            class="nav-link active"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="grid"
+            aria-selected="true"
+          >
+            <i class="fas fa-th"></i>
+          </button>
+          <button
+            class="nav-link"
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+          >
+            <i class="fas fa-square" style="color: #0c4cbb"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+          tabindex="0"
+        >
+          <div class="row p-1">
+            <div class="col-md-4 col-6 px-1">
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1679504928827-2d9c9e808f18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1538&q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4 col-6 px-1">
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1679504808271-237ad3ae0d7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1492&q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4 col-6 px-1">
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1679322703083-370588277d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-1">
+            <div class="col-md-4 col-6 px-1">
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1679210497965-fcd3fbb176dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4 col-6 px-1">
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1636581221009-7e58118a53f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4 col-6 px-1">
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1678794143765-cf91f5d0ae1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-1">
+            <div class="col-md-4 col-6 px-1">
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1676734747834-e6b393e19c6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4 col-6 px-1">
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1678443418620-7a159a488f76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4 col-6 px-1">
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://plus.unsplash.com/premium_photo-1678303396234-4180231353df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
+          tabindex="0"
+        >
+          <div class="row p-1 justify-content-center">
+            <div class="col-4">
+              <div class="containers border p-1">
+                <div class="row">
+                  <div class="col-10">
+                    <p class="fs-5">Street photography at night.</p>
+                  </div>
+                  <div class="col-2 text-end">
+                    <p class="fs-6">12/12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1679504928827-2d9c9e808f18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1538&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="containers border p-1">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="fw-bold">1200 likes</p>
+                    <p>
+                      This is an example of a very good photo you can post on
+                      Instagram.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-1 justify-content-center">
+            <div class="col-4">
+              <div class="containers border p-1">
+                <div class="row">
+                  <div class="col-10">
+                    <p class="fs-5">Afternoon drive.</p>
+                  </div>
+                  <div class="col-2 text-end">
+                    <p class="fs-6">20/12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1679210497965-fcd3fbb176dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="containers border p-1">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="fw-bold">546 likes</p>
+                    <p>
+                      This is an example of a very good photo you can post on
+                      Instagram.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-1 justify-content-center">
+            <div class="col-4">
+              <div class="containers border p-1">
+                <div class="row">
+                  <div class="col-10">
+                    <p class="fs-5">While in China.</p>
+                  </div>
+                  <div class="col-2 text-end">
+                    <p class="fs-6">02/01</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card ratio ratio-4x3">
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1676734747834-e6b393e19c6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="containers border p-1">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="fw-bold">657 likes</p>
+                    <p>
+                      This is an example of a very good photo you can post on
+                      Instagram.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
